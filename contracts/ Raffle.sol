@@ -58,7 +58,7 @@ contract Raffle is VRFConsumerBaseV2, AutomationCompatibleInterface {
         if (s_raffleState != RaffleState.OPEN) {
             revert Raffle__RaffleNotOpen();
         }
-        s_players.push(msg.sender.address);
+        // s_players.push(msg.sender.address);
     }
 
     /**
